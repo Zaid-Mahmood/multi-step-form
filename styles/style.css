@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.container-fluid {
+    width: 100%;
+    height: 100vh;
+    background-color: #eef5ff;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.sideBarImg {
+    background-image: url("../assets/images/bg-sidebar-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 400px;
+    background-position-y: center;
+}
+
+.card-bodyOne {
+    padding: 3% 0% 0% 5%;
+}
+
+.sideBarNum {
+    font-size: small;
+    font-weight: bolder;
+    padding: 5px 10px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+}
+
+h5,
+.textBody {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media only screen and (min-width: 768px) {
+    .sideBarImg1 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .sideBarImg {
+        display: none;
+    }
+
+    .sideBarImg1 {
+        background-image: url("../assets/images/bg-sidebar-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 790px;
+        height: 500px;
+        background-color: #eef5ff;
+        margin: 0%!important;
+    }
+    .container-fluid{
+        padding: 0%!important;
+        overflow-x: visible;
+
+    }
+    .rightSection{
+        max-width: 90%!important;
+        background-color: white;
+        margin-top: -200px!important;
+        border-radius: 10px;
+        padding:  2%!important;
+    }
+    .childRow{
+        padding: 0%!important;
+        margin: 0% !important;
+        border: none!important;
+    }
+    .circles {
+        z-index: 3;
+        border: 1px solid white!important;
+        border-radius: 50%!important;
+        display: flex!important;
+        color: white;
+        font-weight: bold;
+        width: 70px!important;
+        height: 70px!important;
+margin-top: 40px;
+        align-items: center!important;
+        justify-content: center!important;
+    }
+}
+.requireFieldClass {
+    color: red;
+}
+
+.change {
+    cursor: pointer;
+}
+
+/* Second page */
+.card-img-top {
+    width: 35%;
+    height: 45%;
+    margin: 10px;
+}
